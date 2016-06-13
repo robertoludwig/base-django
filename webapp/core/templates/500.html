@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}500. Eerro inesperado{% endblock title %}
+
+{% block content %}
+
+	<div class="main-container">
+		<section class="fullscreen">
+
+			<div class="container v-align-transform">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div class="text-center">
+							<i class="ti-receipt icon icon-lg mb24 mb-xs-0"></i>
+							<h1 class="large">Ooopps! Erro interno inesperado.</h1>
+						 	<span>Desculpe. Ocorreu um erro inesperado.</span> <br>
+							<span>Nossa equipe já foi notificada do problema.</span> <br>
+							<p><span>Caso necessário entre em contato com <a href="mailto:{{ empresa.email }}?subject=500 Erro interno inesperado">{{ empresa.email }}</a></span></p>
+							<a class="btn" href="{% url 'home' %}">Ir para a página inicial</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="embelish-icons">
+					<i class="ti-help-alt"></i>
+					<i class="ti-cross"></i>
+					<i class="ti-support"></i>
+					<i class="ti-announcement"></i>
+					<i class="ti-signal"></i>
+					<i class="ti-pulse"></i>
+					<i class="ti-marker"></i>
+					<i class="ti-pulse"></i>
+					<i class="ti-alert"></i>
+					<i class="ti-help-alt"></i>
+					<i class="ti-alert"></i>
+					<i class="ti-pulse"></i>
+				</div>
+
+			</div>
+		</section>
+	</div>
+
+{% endblock content %}

@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.idea
+.base-django
+*.sqlite3
+*pyc
+__pycache__
+staticfiles
+docs
+media
