@@ -10,10 +10,10 @@
 6. Execute os testes
 
 ```console
-git clone git@github.com:robertoludwig/base-django.git wttd
+git clone git@github.com:robertoludwig/base-django.git base-django
 cd base-django
 python -m venv .base-django
-source .base0django/bin/activate
+source .base-django/bin/activate
 pip install -r requirements-dev.txt
 cp contrib/env-sample .env
 python manage.py test
